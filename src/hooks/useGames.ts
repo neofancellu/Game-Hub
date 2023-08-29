@@ -3,9 +3,10 @@ import { useState, useEffect } from 'react';
 import apiClient from '../services/api-client';
 import axios from 'axios'
 
-interface Game {
+export interface Game {
     id: number,
-    name:string
+    name:string,
+    background_image:string
 }
 
 interface FetchGamesResponse {
@@ -34,7 +35,7 @@ const useGames = () =>{
     return() => controller.abort()
   }, [])
 
-  return {games , error};
+  return {games , error,};
 }
 
 export default useGames;
