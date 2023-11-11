@@ -11,7 +11,7 @@ const SortSelector = () => {
         {value:'name', label:'Name'},
         {value:'-released', label:'Release date'},
         {value:'-metacritic', label:'Popularity'},
-        {value:'-rating', label:'Averate rating'},
+        {value:'-rating', label:'Average rating'},
     ]
     const setSordOrder = UseGameQueryStore(s => s.setSortOrder);
     const sortOrder = UseGameQueryStore(s => s.gameQuery.sortOrder);
