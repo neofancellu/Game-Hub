@@ -1,7 +1,7 @@
 GameHub:
 
 This pulls game data from https://rawg.io/ and presents using https://chakra-ui.com/
-
+Website is written in TypeScript using React.
 NPM
 
 Locally:
